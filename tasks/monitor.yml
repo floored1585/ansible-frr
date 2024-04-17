@@ -1,4 +1,7 @@
 ---
+- name: Monitor | Flush handlers
+  meta: flush_handlers
+
 - name: Monitor | Ensuring /opt/frr/monitoring exists
   ansible.builtin.file:
     path: /opt/frr/monitoring
